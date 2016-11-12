@@ -13,7 +13,9 @@ import { Hero } from './hero';
         (click)="onSelect(hero)">
         <span class="badge">{{hero.id}}</span> {{hero.name}}
       </li>
-    </ul>`,
+    </ul>
+    <my-hero-detail [hero]="selectedHero"></my-hero-detail>
+    `,
     styles: [`
       .selected {
         background-color: #CFD8DC !important;
