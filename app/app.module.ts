@@ -16,7 +16,13 @@ import { DashboardComponent } from './dashboard.component';
       RouterModule.forRoot([{
          path: 'heroes',
          component: HeroesComponent
-      }])
+      },
+      {
+          path: '',
+          redirectTo: '/dashboard',
+          pathMatch: 'full'
+      },
+      ])
     ],
     declarations: [
       AppComponent,
