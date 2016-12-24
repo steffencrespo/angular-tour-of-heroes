@@ -69,12 +69,15 @@ import { HeroService } from './hero.service';
   `]
 })
 
+//implements OnInit to make the component call the service when it is first loaded
 export class HeroesComponent implements OnInit {
   heroes: Hero[];
   selectedHero: Hero;
 
+  //private constructor to inject the HeroService into this component
   constructor(private heroService: HeroService) { }
 
+  //this tells angular what to do on initialization of this component
   ngOnInit(): void {
     this.getHeroes();
   }
