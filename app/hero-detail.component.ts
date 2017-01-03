@@ -22,6 +22,8 @@ import 'rxjs/add/operator/switchMap';
 
 export class HeroDetailComponent implements OnInit {
 
+    hero: Hero;
+
     constructor(
         private heroService: HeroService,
         private route: ActivatedRoute,
