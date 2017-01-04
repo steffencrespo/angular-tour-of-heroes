@@ -23,7 +23,7 @@ import { DashboardComponent } from './dashboard.component';
 
       },
       {
-          path: '/detail/:id',
+          path: 'detail/:id',
           component: HeroDetailComponent
 
       },
